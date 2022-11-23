@@ -1,0 +1,17 @@
+<h2>Insights</h2>
+<p>Below insights of highest country:</p>
+
+<div class="container" ng-init="init()">
+    <canvas  id="MyChart" >{{ chart }}</canvas>
+  </div>
+
+
+<script type="text/javascript">
+    $(document).ready( function () {
+        const myChart = new Chart.getChart("MyChart");
+
+        myChart.data.datasets[0].data[2] = 50000; // Would update the first dataset's value of 'March' to be 50
+        myChart.update(); 
+
+  } );
+</script>

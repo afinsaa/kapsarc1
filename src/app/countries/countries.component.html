@@ -1,0 +1,30 @@
+<!-- Charts -->
+<div class="">
+    <app-charts></app-charts>
+
+    <div class="container" role="main">
+
+
+        <h2>Table</h2>
+        <p>Here are some links to help you get started:</p>
+
+        <table id="datat" class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Country</th>
+                    <th>Month-Year</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of dataArray">
+                    <td>{{data.id}}</td>
+                    <td>{{data.country}}</td>
+                    <td>{{data.month}}</td>
+                    <td>{{data.value}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
