@@ -13,7 +13,7 @@ pip install openpyxl
 
 python3 pyscrape.py
 
-it will loop through the saved sheet and read the required data to be inserted to local sqlite database "Exportsdb.db", also it will save it in json file to presented through the Angular app under the directory "dashboardApp"
+it will loop through the saved sheet and read the required data to be inserted to local sqlite database "Exportsdb.db", also it will save it in json file to presented through the Angular app under the directory "dashboardApp/src/assets", I have assumed there are no APIs needed for this app.
 
 3 - run npm of the Angular App
 
